@@ -1,0 +1,61 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+
+  background-attachment: fixed;
+  background-image: url("../../assets/images/login.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.brand {
+  width: 100%;
+}
+
+.brand__logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.brand__tagline {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.button {
+  position: relative;
+  display: block;
+  line-height: 48px;
+  height: 48px;
+  padding: 0 2.4rem;
+  margin: 0 auto 2.4rem;
+
+  border: 0;
+  border-radius: 2.4rem;
+  outline: 0;
+  cursor: pointer;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(89, 94, 97, 0.9),
+    rgba(89, 94, 97, 0.1)
+  );
+  color: #fff;
+}
+
+.button--text {
+  background: transparent;
+}
