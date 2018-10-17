@@ -22,8 +22,8 @@
 
 .brand__logo {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -35,27 +35,8 @@
   margin: 2rem auto;
 }
 
-.button {
-  position: relative;
-  display: block;
-  line-height: 48px;
-  height: 48px;
-  padding: 0 2.4rem;
+footer > * {
   margin: 0 auto 2.4rem;
-
-  border: 0;
-  border-radius: 2.4rem;
-  outline: 0;
-  cursor: pointer;
-
-  background-image: linear-gradient(
-    to right,
-    rgba(89, 94, 97, 0.9),
-    rgba(89, 94, 97, 0.1)
-  );
-  color: #fff;
-}
-
-.button--text {
-  background: transparent;
+  display: block;
+  text-align: center;
 }

@@ -1,0 +1,13 @@
+<div class="brands">
+  <i
+    *ngFor="let brand of brands; let i = index"
+    class="logo"
+    [style.left.rem]="5 * i"
+    [style.zIndex]="brands.length - i"
+    [style.backgroundImage]="brand.icon | brandImage"
+  >
+  </i>
+</div>
+<nv-button>
+  View all brands
+</nv-button>

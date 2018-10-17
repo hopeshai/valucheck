@@ -1,0 +1,66 @@
+:host {
+  appearance: none;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+
+  padding: 0 1.6rem;
+  line-height: 3.6rem;
+  height: 3.6rem;
+
+  border: 0;
+  border-radius: 2.4rem;
+  outline: 0;
+  cursor: pointer;
+
+  white-space: nowrap;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(89, 94, 97, 0.9),
+    rgba(89, 94, 97, 0.1)
+  );
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.large {
+  line-height: 4rem;
+  height: 4rem;
+  padding: 0 2.4rem;
+  font-size: 1.6rem;
+}
+
+.small {
+  line-height: 2rem;
+  height: 2rem;
+  padding: 0 0.8rem;
+  font-size: 1.2rem;
+}
+
+.textOnly {
+  background: transparent;
+}
+
+.button__icon--left {
+  display: inline-block;
+  transform: translateY(3px);
+  margin-right: 0.4rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+button.contrast {
+  background-image: none;
+  background-color: #fff;
+  color: #000;
+}

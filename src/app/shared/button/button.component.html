@@ -1,0 +1,16 @@
+<button
+  [class.large]="size === 'large'"
+  [class.small]="size === 'small'"
+  [class.textOnly]="!!textOnly"
+  [class.contrast]="variant === 'contrast'"
+  (click)="handleClick($event)"
+  [type]="type || 'button'"
+>
+  <i
+    class="button__icon--left"
+    *ngIf="iconUrl"
+    [style.backgroundImage]="iconUrl | brandImage: 'icons'"
+  >
+  </i>
+  <ng-content></ng-content>
+</button>

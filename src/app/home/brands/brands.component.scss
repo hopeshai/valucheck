@@ -1,0 +1,22 @@
+:host {
+  margin: 1.6rem 2.4rem;
+  height: 10rem;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 2.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+nv-button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}

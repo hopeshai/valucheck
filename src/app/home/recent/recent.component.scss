@@ -1,0 +1,54 @@
+:host {
+  position: relative;
+  display: block;
+  padding: 1.6rem 2.4rem;
+  overflow: hidden;
+}
+
+header {
+  position: relative;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+
+  & > nv-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.logo {
+  display: inline-block;
+  margin: 2rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 2.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.recent-scans {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+:host::before {
+  content: " ";
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  background: inherit;
+  box-shadow: 0 0 0 3000px rgba(255, 255, 255, 0.9);
+  filter: blur(10px);
+}

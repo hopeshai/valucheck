@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+
+  background-image: url("../../assets/images/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & > * {
+    flex: none;
+  }
+  & > nv-product {
+    flex: 1 0 auto;
+  }
+}
+
+footer {
+  margin: 1.6rem 2.4rem;
+  text-align: center;
+}

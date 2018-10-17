@@ -3,13 +3,13 @@
   <div class="brand__tagline">Trace to Origin</div>
 </section>
 <footer>
-  <button class="button" (click)="logInAsOwner()">
+  <nv-button size="large" type="submit" (click)="logInAsOwner()">
     Check as owner
-  </button>
-  <button class="button" (click)="logInAsUser()">
+  </nv-button>
+  <nv-button size="large" type="submit" (click)="logInAsUser()">
     Check as user
-  </button>
-  <button class="button button--text" (click)="logInAsGuest()">
+  </nv-button>
+  <nv-button size="large" type="submit" textOnly="true" (click)="logInAsGuest()">
     Try as guest
-  </button>
+  </nv-button>
 </footer>

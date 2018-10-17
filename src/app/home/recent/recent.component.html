@@ -1,0 +1,15 @@
+<header>
+  <span>Recently Scanned Items: </span>
+  <nv-button size="small" variant="contrast">
+    View all
+  </nv-button>
+</header>
+
+<div class="recent-scans">
+  <i
+    *ngFor="let recentScan of recentScans"
+    class="logo"
+    [style.backgroundImage]="recentScan.icon | brandImage: 'scans'"
+  >
+  </i>
+</div>

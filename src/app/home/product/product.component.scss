@@ -1,0 +1,26 @@
+:host {
+  position: relative;
+  display: block;
+  margin: 1.6rem 2.4rem;
+  text-align: center;
+}
+
+.name {
+  margin: 0 3rem 1.6rem;
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+nv-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nv-icon:nth-of-type(1) {
+  left: 0;
+}
+nv-icon:nth-of-type(2) {
+  right: 0;
+}
