@@ -1,4 +1,16 @@
 :host {
   display: inline-block;
   vertical-align: middle;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+:host(.round) {
+  background: #fff;
+  border-radius: 50%;
+}
+
+svg-icon {
+  display: block;
+  line-height: 0;
 }

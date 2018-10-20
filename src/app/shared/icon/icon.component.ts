@@ -3,13 +3,19 @@ import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
 @Component({
   selector: 'nv-icon',
   templateUrl: './icon.component.html',
-  styleUrls: ['./icon.component.scss']
+  styleUrls: ['./icon.component.scss'],
+  host: {
+    '[class.round]': 'type === "round"',
+    '[class.small]': 'size === "small"',
+    '[class.large]': 'size === "large"',
+  }
 })
 export class IconComponent implements OnInit {
 
   @Input() name: string;
   @Input() fill: string;
   @Input() size: string;
+  @Input() type: string;
   @Output() click = new EventEmitter<MouseEvent>();
 
   sizeOptions = {

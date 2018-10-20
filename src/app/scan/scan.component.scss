@@ -1,34 +1,41 @@
 :host {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-
+  display: block;
+  position: relative;
   width: 100vw;
   height: 100vh;
+  background-image: url("../../assets/images/home.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
-  flex: auto;
+  height: 100%;
 }
 
 footer {
-  flex: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 nav {
   position: relative;
   white-space: nowrap;
+  background: inherit;
   overflow: hidden;
 }
 nav::before {
   content: " ";
   position: absolute;
-  left: -10px;
-  top: -10px;
-  width: calc(100% + 10px);
-  height: calc(100% + 10px);
-  background: orange;
-  filter: blur(10px);
+  left: -100px;
+  top: -100px;
+  width: calc(100% + 200px);
+  height: calc(100% + 200px);
+  background: inherit;
+  box-shadow: inset 0 0 0 200px rgba(192, 192, 192, 0.4);
+  filter: blur(100px);
 }
 
 .tab {
@@ -46,10 +53,17 @@ nav::before {
     display: block;
     width: 2.4rem;
     height: 2.4rem;
-    margin: 0.8rem auto;
+    margin: 1.6rem auto 0.8rem;
   }
 }
 
-.tab--active {
-  color: red;
+.tab--active::after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 8rem;
+  height: 0.4rem;
+  background: #fff;
 }

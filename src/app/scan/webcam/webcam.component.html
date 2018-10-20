@@ -1,8 +1,21 @@
 <header>
-  <nv-icon name="back.svg"></nv-icon>
-  <nv-icon name="switch_camera.svg" (click)="switchCamera()"></nv-icon>
-  <nv-icon *ngIf="flashStatus" name="flash_off.svg" (click)="flash(false)"></nv-icon>
-  <nv-icon *ngIf="!flashStatus" name="flash_on.svg" (click)="flash(true)"></nv-icon>
+  <nv-icon name="back.svg" (click)="navigateToHome()" type="round"></nv-icon>
+  <div *ngIf="!error" class="right__header">
+    <nv-icon name="switch_camera.svg" (click)="switchCamera()" type="round"></nv-icon>
+    <nv-icon *ngIf="flashStatus" name="flash_off.svg" (click)="flash(false)" type="round"></nv-icon>
+    <nv-icon *ngIf="!flashStatus" name="flash_on.svg" (click)="flash(true)" type="round"></nv-icon>
+  </div>
 </header>
-<video #video autoplay></video>
 <canvas #canvas></canvas>
+<video #video autoplay></video>
+<canvas #canvasOverlay></canvas>
+<section *ngIf="error" class="error">
+  <ng-container *ngIf="error.name === 'NotAllowedError'; else otherError">
+    <h3>Grant Access</h3>
+    <p>Allow valUCheck to access your camera.</p>
+  </ng-container>
+  <ng-template #otherError>
+    <h3>{{error.name}}</h3>
+    <p>Unable to scan. Please <a [routerLink]="['../', 'input-code']">enter code</a> manually.</p>
+  </ng-template>
+</section>
