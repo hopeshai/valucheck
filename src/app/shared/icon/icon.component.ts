@@ -8,16 +8,19 @@ import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
 export class IconComponent implements OnInit {
 
   @Input() name: string;
-  @Input() backgroundColor: string;
+  @Input() fill: string;
+  @Input() size: string;
   @Output() click = new EventEmitter<MouseEvent>();
 
-  iconUrl: string;
+  sizeOptions = {
+    small: 1.6,
+    medium: 2.4,
+    large: 3.6
+  };
 
   constructor() { }
 
-  ngOnInit() {
-    this.iconUrl = `url("../../../assets/icons/${this.name}")`;
-  }
+  ngOnInit() { }
 
   handleClick(event: MouseEvent) {
     this.click.emit(event);

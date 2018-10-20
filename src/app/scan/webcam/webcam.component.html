@@ -1,0 +1,8 @@
+<header>
+  <nv-icon name="back.svg"></nv-icon>
+  <nv-icon name="switch_camera.svg" (click)="switchCamera()"></nv-icon>
+  <nv-icon *ngIf="flashStatus" name="flash_off.svg" (click)="flash(false)"></nv-icon>
+  <nv-icon *ngIf="!flashStatus" name="flash_on.svg" (click)="flash(true)"></nv-icon>
+</header>
+<video #video autoplay></video>
+<canvas #canvas></canvas>

@@ -4,7 +4,7 @@
     class="logo"
     [style.left.rem]="5 * i"
     [style.zIndex]="brands.length - i"
-    [style.backgroundImage]="brand.icon | brandImage"
+    [style.backgroundImage]="brand.icon | imagePath: 'brands'"
   >
   </i>
 </div>

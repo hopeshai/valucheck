@@ -9,7 +9,7 @@
   <i
     *ngFor="let recentScan of recentScans"
     class="logo"
-    [style.backgroundImage]="recentScan.icon | brandImage: 'scans'"
+    [style.backgroundImage]="recentScan.icon | imagePath: 'scans'"
   >
   </i>
 </div>

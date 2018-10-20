@@ -9,7 +9,7 @@
   <i
     class="button__icon--left"
     *ngIf="iconUrl"
-    [style.backgroundImage]="iconUrl | brandImage: 'icons'"
+    [style.backgroundImage]="iconUrl | imagePath: 'icons'"
   >
   </i>
   <ng-content></ng-content>

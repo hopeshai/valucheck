@@ -1,7 +1,10 @@
-<i
-  [style.backgroundImage]="iconUrl"
-  [style.backgroundColor]="backgroundColor"
-  role="button"
+<svg-icon
+  [src]="name | imagePath: 'icons': true"
+  [svgStyle]="{
+    'width.rem': sizeOptions[size || 'medium'],
+    'height.rem': sizeOptions[size || 'medium'],
+    'fill': fill || 'currentColor'
+  }"
   (click)="handleClick($event)"
 >
-</i>
+</svg-icon>

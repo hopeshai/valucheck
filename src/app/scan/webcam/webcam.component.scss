@@ -1,0 +1,17 @@
+:host {
+  display: block;
+  width: 100vw;
+  height: calc(100vh - 6.6rem);
+  position: relative;
+}
+
+header {
+  position: relative;
+  z-index: 1;
+}
+
+video, canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

@@ -1,0 +1,19 @@
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <nav>
+    <a [routerLink]="['qr-code']" class="tab" routerLinkActive="tab--active">
+      <i [style.backgroundImage]="'qr_code.svg' | imagePath : 'icons'"></i>
+      QR code
+    </a>
+    <a [routerLink]="['bar-code']" class="tab" routerLinkActive="tab--active">
+      <i [style.backgroundImage]="'bar_code.svg' | imagePath : 'icons'"></i>
+      Bar code
+    </a>
+    <a [routerLink]="['input-code']" class="tab" routerLinkActive="tab--active">
+      <i [style.backgroundImage]="'key_board.svg' | imagePath : 'icons'"></i>
+      Enter code
+    </a>
+  </nav>
+</footer>
