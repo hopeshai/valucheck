@@ -1,8 +1,8 @@
 <svg-icon
   [src]="name | imagePath: 'icons': true"
   [svgStyle]="{
-    'width.rem': sizeOptions[size || 'medium'],
-    'height.rem': sizeOptions[size || 'medium'],
+    'width.rem': sizeOptions[size || 'm'],
+    'height.rem': sizeOptions[size || 'm'],
     'fill': fill || 'currentColor'
   }"
   (click)="handleClick($event)"

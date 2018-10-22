@@ -8,6 +8,7 @@ import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
     '[class.round]': 'type === "round"',
     '[class.small]': 'size === "small"',
     '[class.large]': 'size === "large"',
+    '[class.error]': 'type === "error"'
   }
 })
 export class IconComponent implements OnInit {
@@ -19,9 +20,10 @@ export class IconComponent implements OnInit {
   @Output() click = new EventEmitter<MouseEvent>();
 
   sizeOptions = {
-    small: 1.6,
-    medium: 2.4,
-    large: 3.6
+    s: 1.6,
+    m: 2.4,
+    l: 3.6,
+    xl: 8,
   };
 
   constructor() { }

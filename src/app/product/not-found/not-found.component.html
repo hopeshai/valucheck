@@ -1,0 +1,18 @@
+<header>
+  <nv-icon name="back.svg" (click)="goToScanPage()" type="round"></nv-icon>
+</header>
+<main class="glossy">
+  <div class="scan"></div>
+  <nv-icon name="denied.svg" type="error" size="xl"></nv-icon>
+  <p class="message">This product is not available in secure list.</p>
+  <section class="buttons">
+    <nv-button variant="red-invert" width="15rem">Report us</nv-button>
+    <nv-button variant="outline" width="15rem">Add as new</nv-button>
+  </section>
+</main>
+<footer>
+  <button class="glossy button" (click)="goToScanPage()">
+    <nv-icon name="arrow_anticlockwise.svg"></nv-icon>
+    Scan again
+  </button>
+</footer>

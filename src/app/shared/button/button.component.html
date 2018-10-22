@@ -3,6 +3,9 @@
   [class.small]="size === 'small'"
   [class.textOnly]="!!textOnly"
   [class.contrast]="variant === 'contrast'"
+  [class.outline]="variant === 'outline'"
+  [class.redInvert]="variant === 'red-invert'"
+  [style.width]="width || 'auto'"
   (click)="handleClick($event)"
   [type]="type || 'button'"
 >

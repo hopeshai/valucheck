@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import jsQR from 'jsqr';
+import { Router } from '@angular/router';
+
 import { WebcamComponent } from '../webcam/webcam.component';
 
 @Component({
@@ -11,7 +13,7 @@ export class QrCodeComponent implements OnInit {
 
   @ViewChild('webcam') webcam: WebcamComponent;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -20,7 +22,11 @@ export class QrCodeComponent implements OnInit {
     const code = jsQR(imageData.data, imageData.width, imageData.height);
     if (code && code.data) {
       this.webcam.stopRecording();
-      console.log(code.data);
+      this.router.navigate(['/product'], {
+        queryParams: {
+          code: code.data
+        }
+      });
     }
   }
 }

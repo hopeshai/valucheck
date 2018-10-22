@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21"><defs><style>.a{fill:#38a31f;}</style></defs><g transform="translate(2.471 2.471)"><path class="a" d="M21.529,29.559a8.029,8.029,0,1,1,8.029-8.029A8.013,8.013,0,0,1,21.529,29.559Zm0-14.824a6.794,6.794,0,1,0,6.794,6.794A6.854,6.854,0,0,0,21.529,14.735Z" transform="translate(-13.5 -13.5)"/></g><g transform="translate(9.882)"><path class="a" d="M20.118,17.676a.584.584,0,0,1-.618-.618V12.118a.618.618,0,1,1,1.235,0v4.941A.584.584,0,0,1,20.118,17.676Z" transform="translate(-19.5 -11.5)"/><g transform="translate(0 14.824)"><path class="a" d="M20.118,29.676a.584.584,0,0,1-.618-.618V24.118a.618.618,0,1,1,1.235,0v4.941A.584.584,0,0,1,20.118,29.676Z" transform="translate(-19.5 -23.5)"/></g></g><g transform="translate(0 9.882)"><g transform="translate(14.824)"><path class="a" d="M29.059,20.735H24.118a.618.618,0,1,1,0-1.235h4.941a.618.618,0,1,1,0,1.235Z" transform="translate(-23.5 -19.5)"/></g><path class="a" d="M17.059,20.735H12.118a.618.618,0,1,1,0-1.235h4.941a.618.618,0,1,1,0,1.235Z" transform="translate(-11.5 -19.5)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.326 26.326">
+  <g transform="translate(-11.5 -11.5)">
+    <g transform="translate(11.5 11.5)">
+      <g transform="translate(3.097 3.097)">
+        <path fill="currentColor" d="M23.566,33.632A10.066,10.066,0,1,1,33.632,23.566,10.046,10.046,0,0,1,23.566,33.632Zm0-18.583a8.517,8.517,0,1,0,8.517,8.517A8.593,8.593,0,0,0,23.566,15.049Z" transform="translate(-13.5 -13.5)"/>
+      </g>
+      <g transform="translate(12.389)">
+        <path fill="currentColor" d="M20.274,19.243a.732.732,0,0,1-.774-.774V12.274a.774.774,0,1,1,1.549,0v6.194A.732.732,0,0,1,20.274,19.243Z" transform="translate(-19.5 -11.5)"/>
+        <g transform="translate(0 18.583)">
+          <path fill="currentColor" d="M20.274,31.243a.732.732,0,0,1-.774-.774V24.274a.774.774,0,1,1,1.549,0v6.194A.732.732,0,0,1,20.274,31.243Z" transform="translate(-19.5 -23.5)"/>
+        </g>
+      </g>
+      <g transform="translate(0 12.389)">
+        <g transform="translate(18.583)">
+          <path fill="currentColor" d="M30.469,21.049H24.274a.774.774,0,1,1,0-1.549h6.194a.774.774,0,0,1,0,1.549Z" transform="translate(-23.5 -19.5)"/>
+        </g>
+        <path fill="currentColor" d="M18.469,21.049H12.274a.774.774,0,1,1,0-1.549h6.194a.774.774,0,1,1,0,1.549Z" transform="translate(-11.5 -19.5)"/>
+      </g>
+    </g>
+  </g>
+</svg>

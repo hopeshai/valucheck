@@ -64,3 +64,11 @@ button.contrast {
   background-color: #fff;
   color: #000;
 }
+button.outline {
+  background: transparent;
+  border: 1px solid currentColor;
+}
+button.redInvert {
+  background: #fff;
+  color: #f00;
+}

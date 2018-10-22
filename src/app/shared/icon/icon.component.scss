@@ -9,6 +9,10 @@
   background: #fff;
   border-radius: 50%;
 }
+:host(.error) {
+  background: #f00;
+  border-radius: 50%;
+}
 
 svg-icon {
   display: block;

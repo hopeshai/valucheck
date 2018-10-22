@@ -12,6 +12,7 @@ export class ButtonComponent implements OnInit {
   @Input() type: string;
   @Input() iconUrl: string;
   @Input() variant: string;
+  @Input() width: string;
   @Output() click = new EventEmitter<MouseEvent>();
 
   constructor() { }

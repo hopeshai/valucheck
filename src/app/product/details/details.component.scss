@@ -1,0 +1,78 @@
+:host {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+header {
+  padding: 1.6rem 2.4rem 0;
+  height: 30%;
+
+  background-image: url("../../../assets/brands/details.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & > nv-icon:last-child {
+    float: right;
+  }
+}
+
+.product {
+  padding: 1.6rem 2.4rem;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  color: #000;
+
+  .name {
+    font-size: 3.6rem;
+    font-weight: 700;
+  }
+  .brand {
+    font-size: 2.4rem;
+  }
+}
+
+.location {
+  padding: 1.6rem 6.4rem 1.6rem 2.4rem;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+
+  address {
+    font-style: normal;
+  }
+  nv-icon {
+    position: absolute;
+    right: 2.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #62b40b;
+  }
+}
+
+.details {
+    padding: 1.6rem 2.4rem;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4.8rem;
+  padding: 0 2.4rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  background: linear-gradient(to right, #6CB907, #2F9F24);
+  color: #fff;
+
+  .trust-vote {
+    font-weight: 700;
+  }
+  nv-button {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,24 @@
+<header>
+  <nv-icon name="back.svg" (click)="goToScanPage()" type="round"></nv-icon>
+  <nv-icon name="coordinates.svg" type="round"></nv-icon>
+</header>
+<main>
+  <section class="product">
+    <article class="name">Comfort Cleanse</article>
+    <article class="brand">Himalaya</article>
+    <article class="size">200 grams (100 capsules)</article>
+  </section>
+  <section class="location">
+    <nv-icon name="current_location.svg"></nv-icon>
+    <address>Khestra Agriculture, CV Raman Nagar, Kagaddaspura, Bangalore, Karnataka</address>
+  </section>
+  <section class="details">
+    Scanned Code: {{ code$ | async }}
+  </section>
+</main>
+<footer>
+  <nv-icon name="secure.svg"></nv-icon>
+  <span class="trust-vote">90% Trustable</span>
+  <nv-icon name="help.svg"></nv-icon>
+  <nv-button iconUrl="scan.png" variant="primary">Trace</nv-button>
+</footer>
